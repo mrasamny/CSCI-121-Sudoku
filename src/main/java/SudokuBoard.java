@@ -75,32 +75,8 @@ public class SudokuBoard {
      *   - The inner loop iterates over COLUMNS (board[row].length = 9)
      */
     public String display() {
-        // TODO: replace this line with your code.
         String boardRep = "+-------+-------+-------+\n";
-        for (int row = 0; row < board.length; row++) {           // <-- outer loop: rows
-
-            boardRep += "| ";
-
-            for (int col = 0; col < board[row].length; col++) {  // <-- inner loop: cols
-
-                int value = board[row][col];                      // READ from 2D array
-                boardRep += (value == 0 ? ". " : value + " ");
-
-                // Print a vertical divider after columns 2 and 5
-                if (col == 2 || col == 5) {
-                    boardRep += "| ";
-                }
-            }
-
-            boardRep += "|\n";
-
-            // Print a horizontal divider after rows 2 and 5
-            if (row == 2 || row == 5) {
-                boardRep += "+-------+-------+-------+\n";
-            }
-        }
-
-        boardRep += "+-------+-------+-------+\n";
+        // TODO: replace this line with your code.
 
         return boardRep;
     }
@@ -181,6 +157,7 @@ public class SudokuBoard {
      */
     private boolean checkAllRows() {
         // TODO: replace this line with your code
+        return true;
     }
 
     /**
@@ -192,6 +169,7 @@ public class SudokuBoard {
      */
     private boolean checkAllColumns() {
         // TODO: replace this line with your code
+        return true;
     }
 
     /**
@@ -210,6 +188,7 @@ public class SudokuBoard {
      */
     private boolean checkAllBoxes() {
         // TODO: replace this line with your code
+        return true;
     }
 
     /**
@@ -228,6 +207,7 @@ public class SudokuBoard {
     private boolean hasAllDigits(int startingRow, int endingRow,
                                  int startingCol, int endingCol) {
         // TODO: repalce this line with your code.
+        return true;
     }
 
     /**
